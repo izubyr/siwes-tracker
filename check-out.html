@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWES Tracker - Check-out</title>
+</head>
+<body>
+    <h2>Daily Check-out</h2>
+    <p><a href="dashboard.html">Back to Dashboard</a></p>
+
+    <form action="attendance.html" method="GET">
+        <h3>Daily Logbook Summary</h3>
+        <label for="progress">What did you achieve today</label><br>
+        <textarea id="progress" name="progress" rows="6" cols="40" placeholder="Describes tasks completed, tools used, or challenges faced..."></textarea>
+        <br><br>
+
+        <button type="button" onclick="alert('GPS location verified for check-out!')">Verify Location & Close Day</button>
+        <br><br>
+
+        <button type="submit" style="background-color: red; color: white; padding: 10px 20px;">Confirm Check-out</button>
+    </form>
+</body>
+</html>

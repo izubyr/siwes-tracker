@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIWES Tracker - Check-in</title>
+</head>
+<body>
+    <h2>Daily Check-in</h2>
+    <p><a href="dashboard.html">Back to Dashboard</a></p>
+
+    <form action="attendance.html" method="GET">
+        <!--Loaction selection-->
+        <h3>1. Loaction Verification</h3>
+        <button type="button" onclick="alert('GPS coordinates captured!')">Fetch My Location</button>
+        <p>Coordinates: <span id="loaction-display">Not captured yet</span></p>
+
+        <!--Selfie Verification Placeholder-->
+        <h3>2. Selfie Verification</h3>
+        <div style="width: 200px; height: 150px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center;">
+            [Camera Preview]
+        </div>
+        <br>
+        <button type="button">Take Snapshot</button>
+        <br><br>
+
+        <!--Remarks-->
+        <h3>3. Daily Objective</h3>
+        <label for="objective">What is your primary goal for today</label><br>
+        <textarea id="objective" name="objective" rows="4" cols="50" placeholder="e.g., Working on Networking setups..."></textarea>
+        <br><br>
+
+        <button type="submit" style="background-color: green; color: white; padding: 10px 20px;">Confirm Check-in</button>
+    </form>
+</body>
+</html>
